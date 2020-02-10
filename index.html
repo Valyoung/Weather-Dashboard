@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body>
@@ -22,16 +23,29 @@
       <div class="container" style="margin-top: 10px;">                  <p >Seach for a City:</p>
       <div class="field has-addons">
         <div class="control">
-          <input class="input" type="text" placeholder="">
+          <input id="inCity" class="input" type="text" placeholder="">
         </div>
         <div class="control">
-          <a class="button is-info">
+          <a id="searchbtn" class="button is-info">
            <i class="fa fa-search"></i>
           </a>
         </div>
       </div>
     </div>
-                
-    <script src="script.js"></script> 
+            
+      <div class="wContainer">
+        <img class="icon">
+        <p class="weather"></p>
+        <p class="temp"></p>
+        <p class="hum"></p>
+        <p class="wind"></p>
+        <p class="uv index"></p>
+      </div>
+      
+
+
+            
+<script src="script.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 </body>
 </html>
