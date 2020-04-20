@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body>
     <section class="hero is-dark" style="text-align: center;">
@@ -20,32 +19,30 @@
         </div>
       </section>
 
-      <div class="container" style="margin-top: 10px;">                  <p >Seach for a City:</p>
-      <div class="field has-addons">
-        <div class="control">
-          <input id="inCity" class="input" type="text" placeholder="">
-        </div>
-        <div class="control">
-          <a id="searchbtn" class="button is-info">
-           <i class="fa fa-search"></i>
-          </a>
-        </div>
+      <div class="input">
+        <input type="text" placeholder="Enter the city" class="input_text">
+        <input type="submit" value="Submit" class="submit">
       </div>
     </div>
-            
-      <div class="wContainer">
-        <img class="icon">
-        <p class="weather"></p>
-        <p class="temp"></p>
-        <p class="hum"></p>
-        <p class="wind"></p>
-        <p class="uv index"></p>
-      </div>
+  
+    <div class="container">
+      <div class="card" >
+        <h1 class="name" id="name" style="font-size: 30px; font-weight: bolder;"></h1>
+        <p class="temp" style="font-weight: bolder;"></p>
+        <p class="clouds" style="font-weight: bolder;"></p>
+        <p class="desc" style="font-weight: bolder;"></p>
+        <p class="hum" style="font-weight: bolder;"></p>
+        <p class="wind" style="font-weight: bolder;"></p>
+     
+   </div>
+   <div id="today" class="mt-3"></div>
+        <div id="forecast" class="mt-3"></div>
+    </div>
+
       
 
 
             
 <script src="script.js"></script> 
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 </body>
 </html>
